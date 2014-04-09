@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% for p in posts %} 
+    <a href="{{ p.key().id() }}" class="post-content"
+    {{ p.render() | safe }}
+    <br><br>  <a/>
+  {% endfor %}
+  <div class="age">
+    {{age}}
+  </div>
+{% endblock %}
+
+
